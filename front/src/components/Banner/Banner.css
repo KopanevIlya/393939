@@ -1,0 +1,45 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #2A254B;
+    max-width: 1760px;
+    margin: 0 auto;
+
+  }
+  .banner__leftBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .banner__topContent {
+    font-size: 32px;
+    color: white;
+  }
+  .banner__topContent a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px 16px 32px ;
+    background-color: #4E4D93;
+  }
+  .banner__topContent h2 {
+    margin-bottom: 40px;
+  }
+  .banner__bottomContent p {
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+  }
+  .red {
+    height: 2000px;
+    background-color: red;
+    width: 1000px;
+  }
+  .green {
+    height: 2000px;
+    background-color: #04ff00;
+    width: 1000px;
+  }
+  

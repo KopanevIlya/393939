@@ -1,0 +1,23 @@
+.featuresWrapper{
+    /* max-height: 355px; */
+    padding: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.featuresWrapper h3{
+    margin-bottom: 50px;
+}
+
+.featureItemsContainer{
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+

@@ -1,0 +1,22 @@
+.productListWrapper{
+    padding: 80px 80px 56px 80px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.productListTitle{
+    margin-bottom: 30px;
+}
+
+.productCardsContainer{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.productListBtn{
+    display: flex;
+    align-self: center;
+}

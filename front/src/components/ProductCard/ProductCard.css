@@ -1,0 +1,25 @@
+.productCardWrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+}
+
+.productDescriptionWrapper{
+    margin-top: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.productTitle{
+    margin-bottom: 10px;
+}
+
+.productImg.medium{
+    width: 305px;
+    height: 375px;
+}
+
+.productImg.large{
+    width: 630px;
+    height: 375px;
+}

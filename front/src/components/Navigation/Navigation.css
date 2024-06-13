@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMPrQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMPrQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4VrMPrQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4Y_LPrQ.ttf) format('truetype');
+  }
+
+
+.nav-container__topBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .nav-container__title {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+  }
+  .nav-container__menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px;
+  }
+  .nav-container__menuItem {
+    margin-right: 35px;
+  }
+  .main-container {
+    margin-top: 60px!important;
+    width: 1280px;
+    margin: 0 auto;
+    box-shadow: 14px 11px 10px 9px rgba(34, 60, 80, 0.2);
+  }
+ 
