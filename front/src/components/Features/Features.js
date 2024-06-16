@@ -1,52 +1,68 @@
 import React from "react";
 import "./Features.css";
-import FeaturesItem from "../FeaturesItem/FeaturesItem";
 
-/* компонент принимает через props заголовок */
-function Features({ title }) {
-  /* массив с преимуществами */
-  const feturesList = [
-    {
-      id: 1,
-      featureIcon: "Delivery",
-      featureIconAlt: "icon alt",
-      featureTitle: "Next day as standard",
-      featureDesc:
-        "Order before 3pm and get your order the next day as standard",
-    },
-    {
-      id: 2,
-      featureIcon: "Checkmark--outline",
-      featureIconAlt: "icon alt",
-      featureTitle: "Made by true artisans",
-      featureDesc:
-        "Handmade crafted goods made with real passion and craftmanship",
-    },
-    {
-      id: 3,
-      featureIcon: "Purchase",
-      featureIconAlt: "icon alt",
-      featureTitle: "Unbeatable prices",
-      featureDesc:
-        "For our materials and quality you won’t find better prices anywhere",
-    },
-    {
-      id: 4,
-      featureIcon: "Sprout",
-      featureIconAlt: "icon alt",
-      featureTitle: "Recycled packaging",
-      featureDesc:
-        "We use 100% recycled packaging to ensure our footprint is manageable",
-    },
-  ];
-
+function Features() {
   return (
-    <section className="featuresWrapper">
-      <h3>{title}</h3>
-      <div className="featureItemsContainer">
-        {feturesList.map((item) => (
-          <FeaturesItem {...item} key={item.id} />
-        ))}
+    <section className="features">
+      <div className="features_container">
+      <h3>What makes our brand different</h3>
+      <div className="features__itemsContainer">
+        <article className="features__itemWrapper">
+          <img
+            className="features__icon icon"
+            src="/icons/Delivery.svg"
+            alt="icon alt"
+          />
+          <div className="features__descContainer">
+            <h4 className="features__title">Next day as standard</h4>
+            <p className="features__description">Order before 3pm and get your order the next day as standard</p>
+          </div>
+        </article>
+
+        <article className="features__itemWrapper">
+          <img
+            className="features__icon icon"
+            src="icons/Checkmark--outline.svg"
+            alt="icon alt"
+          />
+          <div className="features__descContainer">
+            <h4 className="features__title">Made by true artisans</h4>
+            <p className="features__description">
+              Handmade crafted goods made with real passion and craftmanship
+            </p>
+          </div>
+        </article>
+
+        <article className="features__itemWrapper">
+          <img
+            className="features__icon icon"
+            src="icons/Purchase.svg"
+            alt="icon alt"
+          />
+          <div className="features__descContainer">
+            <h4 className="features__title">Unbeatable prices</h4>
+            <p className="features__description">
+              For our materials and quality you won’t find better prices
+              anywhere
+            </p>
+          </div>
+        </article>
+
+        <article className="features__itemWrapper">
+          <img
+            className="features__icon icon"
+            src="icons/Sprout.svg"
+            alt="icon alt"
+          />
+          <div className="featureDescriptionContainer">
+            <h4 className="features__title">Sprout</h4>
+            <p className="features__description">
+              We use 100% recycled packaging to ensure our footprint is
+              manageable
+            </p>
+          </div>
+        </article>
+      </div>
       </div>
     </section>
   );

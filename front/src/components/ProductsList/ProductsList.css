@@ -1,14 +1,27 @@
-.productListWrapper{
-    padding: 80px 80px 56px 80px;
+.productList {
+    display: flex;
+    justify-content: center;
+}
+
+.productList__container {
+    width: 100%;
+    max-width: 1760px;
+    /* padding: 80px 80px 56px 80px; */
+    padding-block: 80px 56px;
     display: flex;
     flex-flow: column nowrap;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2A254B;
 }
 
-.productListTitle{
-    margin-bottom: 30px;
+.productList__title {
+    margin-bottom: 35px;
+    font-size: 32px;
 }
 
-.productCardsContainer{
+.productList__cardsContainer {
     display: flex;
     flex-flow: row wrap; 
     justify-content: space-between;
@@ -16,7 +29,7 @@
     margin-bottom: 35px;
 }
 
-.productListBtn{
+.productList__btnWrapper {
     display: flex;
     align-self: center;
 }

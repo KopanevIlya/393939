@@ -1,19 +1,33 @@
-.btn{
+.btn {
     max-height: 56px;
     padding: 15px 0;
     cursor: pointer;
     text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
 }
 
-.btn.gray{
+.btn.gray {
     color: #2A254B;
     background-color: #F9F9F9;
     font-size: 16px;
-    line-height: 150%;
     transition: all 0.3s;
 }
 
-.btn.gray:hover{
+.btn.gray:hover {
     background-color: #bebebe71;
+    
+}
+
+.btn.dark {
+    color: #FFFFFF;
+    background-color: #2A254B;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn.dark:hover {
+    background-color: #2a254bce;
     
 }
