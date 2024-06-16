@@ -1,0 +1,73 @@
+.footer-container {
+    background-color: #2A254B;
+    font-family: "Comfortaa", sans-serif;
+    
+    margin: 0 auto;
+  }
+  .footer-container__topMenu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 1280px;
+    margin: 0 auto;
+    color: #FFFFFF;
+  }
+  .footer-container__topMenuBlock {
+    color: white;
+  }
+  .footer-container__topMenu h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .footer-container__topMenu ul {
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+  }
+  .footer-container .searchForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer-container .searchForm__text {
+    border: none;
+    width: 509px;
+    height: 56px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 30px;
+    background-color: #FFFFFF26;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .footer-container .searchForm__btn {
+    border: none;
+    height: 58px;
+    width: 118px;
+    background-color: #FFFFFF;
+  }
+  .footer-container .searchForm__click {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2A254B;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+  }
+  .footer-container .bottomContent {
+    width: 1280px;
+    font-family: "Comfortaa", sans-serif;
+    margin: 0 auto;
+    color: white;
+  }
+  .footer-container .bottomContent__label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container .bottomContent__labelTxt h3 {
+    font-size: 14px;
+  }
+  .footer-container .bottomContent__labelSocial img {
+    margin-left: 15px;
+  }
+  

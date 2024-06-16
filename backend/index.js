@@ -7,7 +7,7 @@ import cors from "cors"
 
 const app = express();
 
-app.listen(8810, ()=>{
+app.listen(8811, ()=>{
     console.log("!!!!!!!")
 })
 
@@ -16,7 +16,7 @@ app.use(cors())
 const db =mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"root",
+    password:"123Qwe45",
     database:"avion"
 })
 

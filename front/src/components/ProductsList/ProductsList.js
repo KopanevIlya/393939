@@ -64,7 +64,7 @@ function ProductsList({ title }) {
   useEffect(() => {
     const fetchList = async () => {
       try {
-        const res = await axios.get("http://localhost:8810/");
+        const res = await axios.get("http://localhost:8811/");
         setList(res.data);
       } catch (err) {
         console.log(err);

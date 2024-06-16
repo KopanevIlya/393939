@@ -5,7 +5,7 @@ import Features from '../components/Features/Features'
 import ProductsList from '../components/ProductsList/ProductsList'
 import EmailSignUp from '../components/EmailSignUp/EmailSignUp'
 import AboutPromo from '../components/AboutPromo/AboutPromo'
-
+import Footer from '../components/Footer/Footer'
 
 function Main() {
   return (
@@ -21,6 +21,7 @@ function Main() {
         <ProductsList title = {'Our popular products'}/>
         <EmailSignUp />
         <AboutPromo />
+        <Footer/>
       </main>
     
 
