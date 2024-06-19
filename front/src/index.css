@@ -121,9 +121,14 @@ q:after {
   content: '';
   content: none;
 }
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
 a {
   text-decoration: none;
+  color: currentColor;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

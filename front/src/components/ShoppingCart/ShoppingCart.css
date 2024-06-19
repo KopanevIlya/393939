@@ -1,0 +1,92 @@
+.shoppingCart {
+  display: flex;
+  justify-content: center;
+  padding-block: 64px 50px;
+  background-color: #F9F9F9;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  color: #2a254b;
+}
+
+.shoppingCart__container {
+  max-width: 55.42vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.shoppingCart__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.shoppingCart__productCartHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 12px;
+}
+
+.shoppingCart__productCartHeader h6:first-child {
+    max-width: 309px;
+    width: 100%;
+}
+
+
+.shoppingCart__productCart {
+  width: 100%;
+  padding-block: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  border-block: 1px solid #EBE8F4;
+}
+
+.shoppingCart__emptyCartMessage {
+  text-align: center;
+}
+
+.shoppingCart__emptyCartMessage h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.shoppingCart__emptyCartMessage a {
+  font-size: 15px;
+  border-bottom: 1px solid #4E4D93;
+}
+
+.shoppingCart__pricingInfo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 16px;
+}
+
+.shoppingCart__subtotalWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.shoppingCart__subtotalTitle {
+    display: inline;
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 140%;
+    color: #4E4D93;
+}
+
+.shoppingCart__subtotalPrice {
+    display: inline;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.shoppingCart__taxesInfo {
+    font-size: 12px;
+}

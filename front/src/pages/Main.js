@@ -21,6 +21,7 @@ function Main() {
         <ProductsList title = {'Our popular products'}/>
         <EmailSignUp />
         <AboutPromo />
+        <AboutPromo rotate={'rotate'}/>
         <Footer/>
       </main>
     
