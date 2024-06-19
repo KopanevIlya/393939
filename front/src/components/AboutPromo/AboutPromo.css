@@ -14,12 +14,8 @@
 
 .aboutPromo__descBlock {
   width: 50%;
-  padding: 85px 85px 70px 70px;
+  padding: 85px 0 70px 100px;
   box-sizing: border-box;
-}
-
-.aboutPromo__descBlock.rotate {
-  padding: 85px 70px 70px 85px;
 }
 
 .aboutPromo__desContainer {
@@ -29,12 +25,8 @@
   justify-content: space-between;
 }
 
-.aboutPromo__desContainer.rotate {
-  align-items: end;
-}
-
 .aboutPromo__descWrapper {
-  width: 75%;
+  width: 80%;
 }
 
 .aboutPromo__title {

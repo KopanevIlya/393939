@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Navigation.css"
+import { Link } from 'react-router-dom'
 
 function Navigation() {
   return (
@@ -11,10 +12,11 @@ function Navigation() {
                 </span>
           <h1 className="nav-container__title">Avion</h1>
           <div className="nav-container__wrapperBasket">
+            <Link to="/basket">
                     <span className="material-symbols-outlined">
                         shopping_cart
                     </span>
-
+                    </Link>
             <span className="material-symbols-outlined">
                         account_circle
             </span>

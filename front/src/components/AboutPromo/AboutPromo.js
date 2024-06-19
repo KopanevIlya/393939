@@ -5,9 +5,9 @@ import Button from "../Button/Button";
 /* Принимает в себя пропс с значением rotate для возможности интвертирования блока с текстом и картинкой */
 function AboutPromo({ rotate }) {
   return (
-    <section className={"aboutPromo " + rotate}>
-      <article className={"aboutPromo__descBlock " + rotate}>
-        <div className={"aboutPromo__desContainer " + rotate}>
+    <section className={`aboutPromo ${ rotate}`}>
+      <article className="aboutPromo__descBlock">
+        <div className="aboutPromo__desContainer">
           <div className="aboutPromo__descWrapper">
             <h3 className="aboutPromo__title">
               From a studio in London to a global brand with over 400 outlets
