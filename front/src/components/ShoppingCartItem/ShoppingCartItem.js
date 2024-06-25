@@ -20,8 +20,6 @@ function ShoppingCartItem({id, productImg, productImgAlt, productTitle, productD
         if (quantity-1 == 0) deleteProduct(id);
     }
 
-
-
   return (
     <div className="shoppingCartItem">
     {/* карточка товара */}
