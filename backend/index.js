@@ -20,6 +20,15 @@ const db =mysql.createConnection({
     database:"avion"
 })
 
+app.get("/productitem/:id", (req,res)=>{
+    const itemId = req.params.id
+    const q ="SELECT * FROM avion.products WHERE id=?"
+    db.query(q,[itemId],(err,data)=>{
+        if(err)return res.json(err)
+        return res.json(data)
+    })
+})
+
 app.get("/", (req,res)=>{
     const q ="SELECT * FROM avion.products"
     db.query(q,(err,data)=>{
