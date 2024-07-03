@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ShowProduct.css'
 import Button from '../Button/Button'
+import axios from 'axios'
 
-function ShowProduct() {
+function ShowProduct(id) {
+
+  
+
+
+
+
   return (
     <div className='container-showProduct'>
       <img src='img/ImageLeft.png' alt='#'/>
       <div className='container-showProduct__rightBlock rightBlock'>
 
-      <div class="rightBlockWrapper">
+      <div className="rightBlockWrapper">
             
-            <div class="rightBlockWrapper__title">
-                <h1>The Dandy Chair</h1>
+            <div className="rightBlockWrapper__title">
+                <h1>{}</h1>
                 <h3>{`\u00A3  250`}</h3>
             </div>
 
-            <div class="rightBlockWrapper__description">
+            <div className="rightBlockWrapper__description">
                 <h2>Description</h2>
                 <p>A timeless design, with premium materials features as one of our most</p>
                 <p>popular and icons pieces. The dandy chair os perfect for any stylish</p>
@@ -27,18 +34,18 @@ function ShowProduct() {
                 </ul>
             </div>
 
-            <div class="rightBlockWrapper__dimensions">
+            <div className="rightBlockWrapper__dimensions">
                 <h2>Dimensions</h2>
                 <div className='list-container'>
-                <ul class="">
+                <ul className="">
                     <li>Height</li>
                     <li>110cm</li>
                 </ul>
-                <ul class="">
+                <ul className="">
                     <li>Width</li>
                     <li>75cm</li>
                 </ul>
-                <ul class="">
+                <ul className="">
                     <li>Depth</li>
                     <li>50cm</li>
                 </ul>

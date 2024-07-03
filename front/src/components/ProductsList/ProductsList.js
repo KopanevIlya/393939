@@ -4,6 +4,7 @@ import "./ProductsList.css";
 import Button from "../Button/Button";
 import axios from "axios";
 
+
 /* компонент с карточками товаров принимает через props заголовок */
 function ProductsList({ title }) {
   /* массив с карточками товаров */
@@ -72,7 +73,10 @@ function ProductsList({ title }) {
     };
 
     fetchList();
+
+ 
   });
+ 
 
   return (
     <section className="productList">
@@ -80,7 +84,7 @@ function ProductsList({ title }) {
         <h2 className="productList__title">{title}</h2>
         <div className="productList__cardsContainer">
           {productsList.map((item) => (
-            <ProductCard {...item} key={item.id} />
+            <ProductCard  {...item} key={item.id} />
           ))}
         </div>
         <div className="productList__btnWrapper">

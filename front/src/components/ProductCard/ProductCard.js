@@ -1,22 +1,43 @@
-import React from 'react'
-import './ProductCard.css'
+import React, { useState } from 'react';
+import './ProductCard.css';
+import axios from 'axios';
 
-/* карточка товаров принимает через props элемент массива, в котором содержиться путь к картинке, значение для тега alt,
-   заголовок, цену, и размер картинки
-   */
-function ProductCard({productImg, productImgAlt, productTitle, productPrice }) {
+function ProductCard({ productImg, productImgAlt, productTitle, productPrice, id }) {
+  const [item, setItem] = useState(null); // Инициализируем item как null
+  const [showPopup, setShowPopup] = useState(false); // Состояние для отображения popup
+
+  const handleClick = async (id) => {
+    try {
+      const res = await axios.get("http://localhost:8810/productitem/" + id);
+      console.log(res);
+      setItem(res.data[0]); // Обновляем состояние с полученными данными (извлекаем первый элемент массива)
+      setShowPopup(true); // Показываем popup
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
-    <article className='productCard'>
-      <a href='/' className='productCard__link'>
-      {/* <img className={'productImg '} src= {require(`../../images/${productImg}.png`)} alt={productImgAlt} /> */}
-      <img src='img/The Dandy chair.png'/>
-      <div className='productCard__descWrapper'>
-      <h4 className='productCard__title'>{productTitle}</h4>
-      <p className='productCard__description'>{'\u00A3' + productPrice}</p>
-      </div>
-      </a>
-    </article>
-  )
+    <div>
+      <article className='productCard' onClick={() => handleClick(id)}>
+        <img src={productImg} alt={productImgAlt} />
+        <div className='productCard__descWrapper'>
+          <h4 className='productCard__title'>{productTitle}</h4>
+          <p className='productCard__description'>{'\u00A3' + productPrice}</p>
+        </div>
+      </article>
+      {showPopup && item && ( // Проверяем, что popup должен отображаться и данные получены
+        <div className='popup'>
+          <div className='popup__content'>
+            <h1>{item.productTitle}</h1>
+            <p>{'\u00A3' + item.productPrice}</p>
+            <img src={item.productImg} alt={item.productImgAlt} />
+            <button onClick={() => setShowPopup(false)}>Закрыть</button> {/* Кнопка для закрытия popup */}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default ProductCard
+export default ProductCard;

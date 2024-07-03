@@ -5,9 +5,9 @@ import "./Footer.css"
 function Footer() {
   return (
     
-         <div class="footer-container">
-           <div class="footer-container__topMenu">
-                <div class="topMenuBlock">
+         <div className="footer-container">
+           <div className="footer-container__topMenu">
+                <div className="topMenuBlock">
                     <h1>Menu</h1>
                     <ul>New arrivals</ul>
                     <ul>Best sellers</ul>
@@ -15,7 +15,7 @@ function Footer() {
                     <ul>Popular this week</ul>
                     <ul>All products</ul>
                 </div>
-                <div class="topMenuBlock">
+                <div className="topMenuBlock">
                     <h1>Categories</h1>
                     <ul>Crockery</ul>
                     <ul>Furniture</ul>
@@ -24,7 +24,7 @@ function Footer() {
                     <ul>Chairs</ul>
                     <ul>Crockery</ul>
                 </div>
-                <div class="topMenuBlock">
+                <div className="topMenuBlock">
                     <h1>Our company</h1>
                     <ul>About us</ul>
                     <ul>Vacancies</ul>
@@ -32,22 +32,22 @@ function Footer() {
                     <ul>Privacy</ul>
                     <ul>Returns policy</ul>
                 </div>
-                <div class="topMenuBlock">
+                <div className="topMenuBlock">
                     <h1>Join our mailing list</h1>
-                    <div class="topMenu__searchForm searchForm">
-                        <input class="searchForm__text" type="text" 
+                    <div className="topMenu__searchForm searchForm">
+                        <input className="searchForm__text" type="text" 
                         placeholder  = "your@email.com"></input>
-                        <button class="searchForm__btn"><a class="searchForm__click" href="">Sign up</a> </button>
+                        <button className="searchForm__btn"><a className="searchForm__click" href="">Sign up</a> </button>
                     </div>
                 </div>
            </div> 
-           <div class="topMenu__bottomContent bottomContent">
+           <div className="topMenu__bottomContent bottomContent">
                 
-                <div class="bottomContent__label">
-                    <div class="bottomContent__labelTxt">
+                <div className="bottomContent__label">
+                    <div className="bottomContent__labelTxt">
                         <h3>Copyright 2022 Avion LTD</h3>
                     </div>
-                    <div class="bottomContent__labelSocial">
+                    <div className="bottomContent__labelSocial">
                         <img src='../img/Property 1=Logo--facebook.png'></img>
                         <img src='../img/Property 1=Logo--linkedin.png'></img>
                         <img src='../img/Property 1=Logo--pinterest.png'></img>

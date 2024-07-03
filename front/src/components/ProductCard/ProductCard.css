@@ -36,3 +36,38 @@
     line-height: 150%;
 }
 
+productCard {
+    cursor: pointer;
+  }
+  
+  
+  .popup {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+  }
+  
+  .popup__content {
+    padding: 20px;
+  }
+  
+  /* Кнопка закрытия popup */
+  .popup__content button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #ff4e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup__content button:hover {
+    background-color: #ff7878;
+  }
