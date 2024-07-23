@@ -8,12 +8,34 @@ function ProductCard({ productImg, productImgAlt, productTitle, productPrice, id
 
   const handleClick = async (id) => {
     try {
-      const res = await axios.get("http://localhost:8810/productitem/" + id);
-      console.log(res);
-      setItem(res.data[0]); // Обновляем состояние с полученными данными (извлекаем первый элемент массива)
-      setShowPopup(true); // Показываем popup
+        const res = await axios.get("http://localhost:8810/productitem/" + id);
+        console.log("Fetched data: ", res.data);
+        setItem(res.data[0]);
+        setShowPopup(true);
     } catch (err) {
-      console.log(err);
+        console.error("Error:", err);
+    }
+  };
+
+  const handleAddToBasket = async () => {
+    try {
+        // Отправляем упрощенные данные
+        const basketData = {
+            productImgAlt: item.productImgAlt,
+            productTitle: item.productTitle,
+            productPrice: item.productPrice,
+            productCategory: item.productCategory,
+            productType: item.productType,
+            productMaterial: item.productMaterial,
+        };
+
+        console.log("Sending data to server:", basketData);
+
+        await axios.post("http://localhost:8810/post", basketData);
+        // Закрываем попап после успешного добавления
+        setShowPopup(false);
+    } catch (err) {
+        console.error("Error:", err);
     }
   };
 
@@ -32,6 +54,7 @@ function ProductCard({ productImg, productImgAlt, productTitle, productPrice, id
             <h1>{item.productTitle}</h1>
             <p>{'\u00A3' + item.productPrice}</p>
             <img src={item.productImg} alt={item.productImgAlt} />
+            <button onClick={handleAddToBasket}>Добавить в корзину</button> {/* Кнопка для добавления в корзину */}
             <button onClick={() => setShowPopup(false)}>Закрыть</button> {/* Кнопка для закрытия popup */}
           </div>
         </div>
