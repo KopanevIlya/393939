@@ -45,6 +45,18 @@ app.get("/", (req, res) => {
     });
 });
 
+
+app.get("/basket/", (req, res) => {
+    const q = "SELECT * FROM avion.basket";
+    db.query(q, (err, data) => {
+        if (err) {
+            console.error("Failed to fetch products: ", err);
+            return res.status(500).json(err);
+        }
+        return res.json(data);
+    });
+});
+
 app.post("/post", (req, res) => {
     const q = "INSERT INTO avion.basket( `productImgAlt`, `productTitle`, `productPrice`, `productCategory`, `productType`, `productMaterial`) VALUES ( ?, ?, ?, ?, ?, ?)";
     const values = [
